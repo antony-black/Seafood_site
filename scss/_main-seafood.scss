@@ -1,0 +1,124 @@
+.seafood {
+  padding: 100px 0;
+  &__items {
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+   &__item--text-right .seafood__item-title{
+     max-width: 420px;
+  }
+  &__item--text-right .seafood__item-content{
+    margin-right: 180px;
+    padding-left: 20px;
+  }
+  &__item-content {
+   width: 100%;
+  }
+
+  &__item-title {
+    @include title('Roboto Slab' serif, 400, 24px, 120%, $color-1);
+    max-width: 490px;
+    margin-bottom: 30px;
+  }
+
+  &__item-text {
+    max-width: 420px;
+    color: $color-4;
+    margin-bottom: 30px;
+  }
+
+  &__img {
+    object-fit: cover;
+  }
+
+  &__item--first .seafood__item-content{
+    padding-right: 20px;
+  }
+
+  &__item--third .seafood__item-content{
+    padding-right: 20px;
+  }
+}
+
+.blockquote-content {
+  max-width: 800px;
+  margin: 0 auto;
+
+  &__img {
+    object-fit: cover;
+  }
+
+  &__text {
+    max-width: 500px;
+    margin: 0 auto;
+    @include title('Roboto Slab' serif, 400, 18px, 24px, $color-4);
+    text-align: center;
+  }
+}
+// ======================
+@media (max-width: 850px) {
+  .seafood{
+    padding: 30px 0;
+  }
+  .seafood__item{
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .seafood__item-text{
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .seafood__item-title{
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .seafood__img{
+    width: 100%;
+  }
+  .seafood__item--text-right{
+    flex-wrap: wrap-reverse;
+  }
+  .seafood__item--text-right .seafood__item-content{
+    padding-left: 0;
+    margin-right: 0;
+  }
+  .seafood__item--first .seafood__item-content,
+  .seafood__item--third .seafood__item-content{
+    padding-right: 0;
+  }
+  .blockquote-content__img{
+    max-width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

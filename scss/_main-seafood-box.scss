@@ -1,0 +1,26 @@
+.seafood-box {
+  padding: 290px 0 100px 0;
+  background: url('../img/seafood-box/seafood-bg.jpg') top/cover no-repeat; 
+  
+  &__inner {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__item {
+    width: 180px;
+    height: 165px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url('../img/seafood-box/seafood-decor.svg') center/cover no-repeat;
+    @include title('Roboto Slab' serif, 700, 18px, 24px, $color-3);
+  }
+}
+// ========================
+@media (max-width: 700px) {
+  .seafood-box{
+    display: none;
+  }
+}

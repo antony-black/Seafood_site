@@ -1,0 +1,19 @@
+@mixin title($ff, $fw, $fs, $Lh, $col){
+  font-family: $ff;
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $Lh;
+  color: $col;
+}
+
+@mixin text($fs, $Lh, $color-5) {
+  font-size: $fs;
+  line-height: $Lh;
+  color: $color-5;
+}
+@mixin text-2($fw, $fs, $Lh, $color-5) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $Lh;
+  color: $color-5;
+}

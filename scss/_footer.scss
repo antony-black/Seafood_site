@@ -1,0 +1,46 @@
+.footer {
+  padding-bottom: 110px;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo{
+      padding-bottom: 37px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    padding-top: 43px;
+  }
+
+  &__list-item + &__list-item {
+    margin-left: 10px;
+  }
+
+  &__list-link path{
+    transition: all .4s;
+  }
+
+  &__list-link:hover path {
+    fill: $color-1;
+  }
+  
+}
+// ===========================
+@media (max-width: 1030px) {
+  .footer{
+    padding-bottom: 30px;
+  }
+  .footer .logo__link,
+  .footer .menu{
+    display: none;
+  }
+  .footer__content{
+    justify-content: center;
+  }
+  .footer__list{
+    padding-top: 0;
+  }
+}

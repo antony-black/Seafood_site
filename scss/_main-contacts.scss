@@ -1,0 +1,40 @@
+.contacts {
+  background: url('../img/contacts/contacts.jpg') bottom left no-repeat;
+  margin-bottom: 100px;
+  
+  &__content {
+    max-width: 380px;
+    margin-left: auto;
+    padding: 33px 0 33px 20px;
+    background: $color-3;
+  }
+
+  &__descr {
+    @include title('Roboto Slab' serif, 400, 18px, 24px, $color-1);
+    max-width: 195px;
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    color: $color-4;
+  }
+
+  &__list-item {
+    margin-bottom: 30px;
+  }
+
+  &__list-link {
+  }
+}
+// ==================================
+@media (max-width: 780px) {
+  .contacts{
+    background-image: none;
+    margin-bottom: 30px;
+  }
+  .contacts__content{
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+}
